@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Elétrica Moreira</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/64BbK9SFKH2jk86U3dGj2P?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo">
+            <h1 class="cabecalho__texto">Auto Elétrica Moreira</h1>
+            <img src="img/ferramentas-menor.png" alt="Logo ferramentas" class="cabecalho__imagem">
+        </div>
+        
+        <div class="cabecalho__container">
+            <nav class="cabecalho__links">
+                <a class="cabecalho__nav-link" href="index.html#empresa">A Empresa</a>
+                <a class="cabecalho__nav-link" href="index.html#servicos">Serviços</a>
+                <a class="cabecalho__nav-link" href="index.html#contato">Contato</a>
+                <a class="cabecalho__nav-link" href="index.html#horario">Horário de Atendimento</a>
+                <a class="cabecalho__nav-link" href="index.html#localizacao">Localização</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="principal">
+        <section class="empresa">
+            <a name="empresa" class="empresa__titulo"> A EMPRESA</a>
+                <p class="empresa__texto">Lorem ipsum dolor sit amet. Error quia ex velit nemo eum repellendus dolorum eos cumque odit est iure quia. Aut error ducimus vel sequi corporis non iusto quas qui officia voluptas rem quos cumque! Aut quisquam quaerat aut accusantium fugit aut laboriosam labore et maxime praesentium. Et harum enim vel impedit corporis voluptate laboriosam.</p>
+                <img src="img/carro-alto.jpg" alt="Homem arrumando carro que está elevado por um macaco hidráulico" class="empresa__imagem">
+                <p class="empresa__texto">Ut necessitatibus iusto ut commodi enim ut nisi incidunt aut nihil perferendis aut voluptatem nostrum est debitis labore et voluptatem voluptatem. Est commodi cumque est cumque doloribus id autem similique? Eum omnis dolore ut ipsum mollitia eum dolor fugiat est mollitia molestiae!</p>                
+            </section>
+
+        <section class="servicos">
+            <a name="servicos" class="servicos__titulo">SERVIÇOS</a>
+            <div class="servicos__itens">
+                <div class="servicos__item">
+                    <h3 class="item__texto">Elétrica</h3>
+                    <img src="img/eletrica.jpg" alt="" class="item__imagem">
+                </div>
+                <div class="servicos__item"> 
+                    <h3 class="item__texto">Injeção Eletrônica</h3>
+                    <img src="img/injecao.jpg" alt="" class="item__imagem">
+                </div>
+                <div class="servicos__item">
+                    <h3 class="item__texto">Motor de Arranque</h3>
+                    <img src="img/motor.jpg" alt="" class="item__imagem">
+                </div>
+                <div class="servicos__item">
+                    <h3 class="item__texto">Sistemas de Iluminação</h3>
+                    <img src="img/ilum.jpg" alt="" class="item__imagem">
+                </div>
+            </div>
+        </section>
+
+        <section class="contato">
+            <a name="contato" class="contato__titulo">CONTATO</a>
+            <form class="contato__formulario">
+                <label for="tNome">*Nome:</label><br>
+                <input type="text" id="tNome" maxlength="40" size="80" placeholder="Nome e Sobrenome" required="required" class="formulario__quadros"/> <br><br>
+                
+                <label for="tCelular">*Celular</label><br>
+                <input type="tel" id="tCelular" title="(99) 99999-9999" placeholder="(99) 99999-9999" class="formulario__quadros" pattern="\(\d{2}\)\s\d{5}-\d{4}" class="cssValida" required="required"/>
+                <br><br>
+
+                <label for="eMail" >*E-mail</label><br>
+                <input type="email" id="eMail" placeholder="nome@dominio.com" required="required" class="formulario__quadros"/>
+                <br><br>
+
+                <label for="Contato">Como prefere ser contatado?</label><br>
+                <input type="radio" name="Contato" value="c" checked="checked"/> Celular<br>
+                <input type="radio" name="Contato" value="e"/> E-mail<br><br>
+
+                <label for="tSugestoes">Deixe sua mensagem aqui</label><br>
+                <textarea id="tSugestoes" rows="4" cols="80" placeholder="Escreva sua mensagem aqui..." class="formulario__quadros"></textarea>
+                <br><br>             
+                
+                <input type="reset" name="bLimpar" value="Limpar tela" class="botao__limpar"/>
+                <input type="submit" name="bSalvar" value="Salvar" class="botao__salvar"/>            
+                <br>
+            </form>
+            <img src="img/telefones (1).png" alt="Ícone de telefone" class="contato__imagem">
+        </section>
+
+        <section class="horario">
+            <a name="horario" class="horario__titulo">HORÁRIO DE ATENDIMENTO</a>
+            <img src="img/relogio (1).png" alt="Ícone de relógio" class="horario__imagem">
+            <table class="horario__tabela">
+                <tr>
+                    <td class="horario__cabecalho">Dias</td>
+                    <td class="horario__cabecalho">Horários</td>
+                </tr>
+                <tr>
+                    <td class="horario__itens">Segunda à Sexta</td>
+                    <td class="horario__itens">08:00 às 12:00</td>
+                </tr>
+                <tr>
+                    <td class="horario__itens">Segunda à Sexta</td>
+                    <td class="horario__itens">13:00 às 18:00</td>
+                </tr>
+                <tr>
+                    <td class="horario__itens">Sábado</td>
+                    <td class="horario__itens">08:00 às 12:00</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="localizacao">
+            <a name="localizacao" class="localizacao__titulo">LOCALIZAÇÃO</a>
+            <ul class="localizacao__lista">
+                <li class="localizacao__itens">Rua Manoel Batista de Souza, nº 121</li>
+                <li class="localizacao__itens">Jardim Itapura 2</li>
+                <li class="localizacao__itens">Presidente Prudente/SP</li>
+            </ul>
+            <iframe class="localizacao__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.733179367168!2d-51.370760985463434!3d-22.136146685409038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f50b505f53a9%3A0x3444512b0dcc5b26!2sAuto%20El%C3%A9trica%20Moreira!5e0!3m2!1spt-BR!2sbr!4v1655732629389!5m2!1spt-BR!2sbr" width="960" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__logotipo">
+            <h3 class="rodape__logo">Auto Elétrica Moreira</h3>            
+            <img src="img/ferramentas-menor.png" alt="Imagem de duas ferramentas cruzadas" class="rodape__imagem">
+        </div>
+        <div>
+            <h4 class="rodape__contato">(18) 99789-1955 - Donizete Moreira</h4>
+            <h4 class="rodape__contato"> (18) 3917-5959 - Telefone fixo</h4>
+        </div>
+        <p class="rodape__texto">Todos os direitos reservados ® 2022</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,323 @@
+:root{
+    --vermelhologo: #D80000;
+    --brancoprincipal: #FFFFFF;
+    --pretoprincipal: #090804;
+    --amarelologo: #f5d64a;
+    --fonteprincipal: 'Fira Sans';
+}
+
+body{
+    background-color: #c3bdbd;
+    background-size: 100%;
+}
+
+.cabecalho{
+    background-color: var(--pretoprincipal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px 30px 20px;
+    border-bottom: 1px solid var(--brancoprincipal);
+}
+
+.cabecalho__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho__texto{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--fonteprincipal);
+    color: var(--brancoprincipal);
+    margin-right: 20px;
+}
+
+.cabecalho__imagem{
+    width: 15%;
+}
+
+.cabecalho__nav-link{
+    color: var(--brancoprincipal);
+    border: 1px solid var(--brancoprincipal);
+    border-radius: 5px;
+    padding: 5px;
+    font-family: var(--fonteprincipal);
+    text-decoration: none;
+    margin: 5px;
+}
+
+.cabecalho__nav-link:hover{
+    color: var(--pretoprincipal);
+    border-color: var(--amarelologo);
+    background-color: var(--amarelologo);
+    font-size: 18px;
+    transition: .5s;
+}
+
+.empresa{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "empresa__titulo empresa__titulo"    
+        "empresa__texto empresa__imagem"
+        "empresa__texto empresa__imagem";
+    grid-column: 2;    
+    column-gap: 8px;
+    row-gap: 8px;
+    margin: 20px;   
+    align-items: center;
+}
+
+.empresa__titulo, .contato__titulo, .servicos__titulo, .horario__titulo, .localizacao__titulo{
+    font-family: var(--fonteprincipal);
+    color: var(--pretoprincipal);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 20px 0;
+    grid-column: span 2;
+    text-align: center;
+}
+
+.empresa__texto{
+    font-family: var(--fonteprincipal);
+    color: var(--pretoprincipal);
+    font-weight: 200;
+    font-size: 22px;
+    text-align: justify;
+    padding: 5px;
+    margin-left: 60px;
+}
+
+.empresa__imagem{
+    width: 50%;
+    grid-row: span 2;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px var(--pretoprincipal);
+}
+
+.servicos{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.servicos__itens{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin: 0 20px;
+    
+}
+
+.servicos__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 16px;
+    width: 14em;
+    height: 14em;
+}
+
+.item__texto{
+    position: relative;
+    z-index: 2;
+    font-family: var(--fonteprincipal);
+    font-size: 28px;
+    color: var(--amarelologo);
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 1px 1px 3px var(--pretoprincipal);
+}
+
+.item__imagem{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+}
+
+.servicos__item:hover, .item__imagem:hover{
+    transition: .5s;
+    opacity: 100%;
+    border-radius:50%;
+}
+
+.contato__itens, .localizacao__itens, .horario__itens{
+    font-family: var(--fonteprincipal);
+    color: var(--pretoprincipal);
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "contato__titulo contato__titulo"    
+        "contato__lista contato__imagem";
+    margin: 20px;
+    column-gap: 8px;
+    row-gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato__formulario{
+    font-family: var(--fonteprincipal);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.contato__imagem{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.formulario__quadros{
+    border: 1px solid var(--brancoprincipal);
+    padding: 4px;
+    font-family: var(--fonteprincipal);
+    background-color: #ddd7d7;
+    color: var(--pretoprincipal);
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.botao__limpar, .botao__salvar{
+    font-family: var(--fonteprincipal);
+    font-size: 18px;
+    background-color: var(--brancoprincipal);
+    border: 1px solid var(--brancoprincipal);
+    border-radius: 5px;
+}
+
+.botao__limpar:hover, .botao__salvar:hover{
+    background-color: var(--amarelologo);
+    border: 1px solid var(--amarelologo);
+    transition: .4s;
+}
+
+.horario{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "horario__titulo horario__titulo"    
+        "horario__imagem horario__lista";
+    margin: 20px;
+    column-gap: 8px;
+    row-gap: 8px;
+    text-align: center;
+}
+
+.horario__tabela{
+    font-family: var(--fonteprincipal);
+    color: var(--pretoprincipal);
+    font-size: 22px;
+    align-items: center;
+    margin: 10px;
+}
+
+.horario__cabecalho{
+    font-weight: 700;
+    padding: 10px;
+}
+
+.horario__itens{
+    padding: 10px;
+}
+
+.horario__imagem{
+    width: 45%;
+    margin: 0 auto;
+}
+.localizacao{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "localizacao__titulo localizacao__titulo"    
+        "localizacao__texto localizacao__mapa"
+        "localizacao__texto localizacao__mapa";
+    margin: 20px;
+    column-gap: 8px;
+    row-gap: 8px;
+    align-items: center;
+}
+
+.localizacao__container{
+    display: flex;
+    margin: 20px 0;
+    padding: 10px;
+    align-items: center;
+}
+
+.localizacao__itens{
+    margin: 0 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.localizacao__mapa{
+    margin: 0 auto;
+}
+
+.rodape{
+    background-image: url(img/fundo1.jpg);
+    height: 200px;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.rodape__logotipo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape__logo{
+    font-family: var(--fonteprincipal);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--brancoprincipal);
+}
+
+.rodape__imagem{
+    align-items: center;
+    width: 60px;
+    padding: 10px;
+}
+
+.rodape__texto{
+    display: block;
+    color: var(--brancoprincipal);
+    font-family: var(--fonteprincipal);
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.rodape__contato{
+    display: inline;
+    color: var(--brancoprincipal);
+    font-family: var(--fonteprincipal);
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    padding: 10px;
+}
